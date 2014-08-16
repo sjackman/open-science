@@ -108,7 +108,6 @@ A reproducible manuscript
 ================================================================================
 
 One Makefile script
--------------------
 
 + Downloads the data
 + Runs the analyses
@@ -120,17 +119,17 @@ One Makefile script
 Turns this
 ================================================================================
 
-![UniqTag markdown](UniqTag-md.png)
+![UniqTag Markdown](UniqTag-md.png)
 
 Into this
 ================================================================================
 
 ![UniqTag PDF](UniqTag-pdf.png)
 
-Document workflow
+Workflow
 ================================================================================
 
-Courtesy of [Plain Text, Papers, Pandoc][] by [Kieran Healy][]
+[Plain Text, Papers, Pandoc][] by [Kieran Healy][]
 
 ![I promise this is less insane than it appears](workflow-rmd-md.png)
 
@@ -140,12 +139,12 @@ Courtesy of [Plain Text, Papers, Pandoc][] by [Kieran Healy][]
 Make is beautiful
 ================================================================================
 
-+ Give it rules to create one type of file from another
-+ Tell it what you files you want to create
++ Tell Make how to create one type of file from another
++ and what you files you want to create
 + Make looks at which files you have
 + and figures out how to create the files you want
 
-Bioinformatics pipeline using Make
+Make example
 ================================================================================
 
 ```Makefile
@@ -173,7 +172,7 @@ samtools index hello.sort.bam
 Markdown for the manuscript
 ================================================================================
 
-Markdown is a simple typesetting language
+Markdown is a plain-text typesetting language
 
 ```markdown
 A header
@@ -193,7 +192,7 @@ A list:
 + This text is *italic*
 + This text is **bold**
 
-RMarkdown for the supplementary material
+RMarkdown for supplementary material
 ================================================================================
 
 + RMarkdown interleaves text with code in R
@@ -204,10 +203,29 @@ RMarkdown for the supplementary material
 Pandoc
 ================================================================================
 
-Pandoc converts between every file format known to man (just about)
+Pandoc converts between every file format known (just about)
 
 + Markdown
 + HTML
 + LaTeX
 + PDF
 + ODT and docx (yes, really)
+
+Shaun Jackman
+================================================================================
+
+[Genome Sciences Centre][], BC Cancer Agency
+
+Vancouver, Canada
+
+[Genome Sciences Centre]: http://bcgsc.ca
+
+@[sjackman][]
+
+[github.com/sjackman][]
+
+[sjackman.ca][]
+
+[sjackman]: http://twitter.com/sjackman
+[github.com/sjackman]: https://github.com/sjackman
+[sjackman.ca]: http://sjackman.ca
