@@ -1,0 +1,605 @@
+digraph G {
+  label = "Homebrew Dependencies"
+  labelloc = "t";
+  rankdir = "TB";
+  node [fontname="HelveticaNeue",fontsize="14"];
+  graph [fontname="Futura-Medium",fontsize="48"];
+  ranksep = "3";
+  newrank = "True";
+  "boost"                 [shape="box",label="boost"]
+  "google-sparsehash"     [shape="box",label="google-sparsehash"]
+  "open-mpi"              [shape="box",label="open-mpi"]
+  "mummer"                [shape="box",label="mummer"]
+  "gcc"                   [shape="box",label="gcc"]
+  "veclibfort"            [shape="box",label="veclibfort"]
+  "git"                   [shape="box",label="git"]
+  "glib"                  [shape="box",label="glib"]
+  "gobject-introspection" [shape="box",label="gobject-introspection"]
+  "pkg-config"            [shape="box",label="pkg-config"]
+  "xz"                    [shape="box",label="xz"]
+  "autoconf"              [shape="box",label="autoconf"]
+  "cmake"                 [shape="box",label="cmake"]
+  "samtools"              [shape="box",label="samtools"]
+  "hmmer"                 [shape="box",label="hmmer"]
+  "htslib"                [shape="box",label="htslib"]
+  "libatomic_ops"         [shape="box",label="libatomic_ops"]
+  "hdf5"                  [shape="box",label="hdf5"]
+  "jpeg"                  [shape="box",label="jpeg"]
+  "libpng"                [shape="box",label="libpng"]
+  "mysql"                 [shape="box",label="mysql"]
+  "pcre"                  [shape="box",label="pcre"]
+  "python"                [shape="box",label="python"]
+  "blast"                 [shape="box",label="blast"]
+  "r"                     [shape="box",label="r"]
+  "python3"               [shape="box",label="python3"]
+  "fontconfig"            [shape="box",label="fontconfig"]
+  "freetype"              [shape="box",label="freetype"]
+  "pixman"                [shape="box",label="pixman"]
+  "readline"              [shape="box",label="readline"]
+  "geneid"                [shape="box",label="geneid"]
+  "genewise"              [shape="box",label="genewise"]
+  "circos"                [shape="box",label="circos"]
+  "imagemagick"           [shape="box",label="imagemagick"]
+  "ogdraw"                [shape="box",label="ogdraw"]
+  "phylip"                [shape="box",label="phylip"]
+  "unrar"                 [shape="box",label="unrar"]
+  "gd"                    [shape="box",label="gd"]
+  "gmp"                   [shape="box",label="gmp"]
+  "isl"                   [shape="box",label="isl"]
+  "gmp4"                  [shape="box",label="gmp4"]
+  "isl011"                [shape="box",label="isl011"]
+  "qt"                    [shape="box",label="qt"]
+  "go"                    [shape="box",label="go"]
+  "gettext"               [shape="box",label="gettext"]
+  "cloog"                 [shape="box",label="cloog"]
+  "libmpc"                [shape="box",label="libmpc"]
+  "mpfr"                  [shape="box",label="mpfr"]
+  "cloog018"              [shape="box",label="cloog018"]
+  "libmpc08"              [shape="box",label="libmpc08"]
+  "mpfr2"                 [shape="box",label="mpfr2"]
+  "libtiff"               [shape="box",label="libtiff"]
+  "cairo"                 [shape="box",label="cairo"]
+  "pango"                 [shape="box",label="pango"]
+  "libffi"                [shape="box",label="libffi"]
+  "elph"                  [shape="box",label="elph"]
+  "gflags"                [shape="box",label="gflags"]
+  "lua"                   [shape="box",label="lua"]
+  "atk"                   [shape="box",label="atk"]
+  "gdk-pixbuf"            [shape="box",label="gdk-pixbuf"]
+  "bdw-gc"                [shape="box",label="bdw-gc"]
+  "libtool"               [shape="box",label="libtool"]
+  "libunistring"          [shape="box",label="libunistring"]
+  "icu4c"                 [shape="box",label="icu4c"]
+  "ghc"                   [shape="box",label="ghc"]
+  "szip"                  [shape="box",label="szip"]
+  "automake"              [shape="box",label="automake"]
+  "gnuplot"               [shape="box",label="gnuplot"]
+  "jellyfish-1.1"         [shape="box",label="jellyfish-1.1"]
+  "seqan"                 [shape="box",label="seqan"]
+  "cscope"                [shape="box",label="cscope"]
+  "exonerate"             [shape="box",label="exonerate"]
+  "viennarna"             [shape="box",label="viennarna"]
+  "docbook"               [shape="box",label="docbook"]
+  "expat"                 [shape="box",label="expat"]
+  "flex"                  [shape="box",label="flex"]
+  "google-perftools"      [shape="box",label="google-perftools"]
+  "openssl"               [shape="box",label="openssl"]
+  "libevent"              [shape="box",label="libevent"]
+  "makedepend"            [shape="box",label="makedepend"]
+  "cabal-install"         [shape="box",label="cabal-install"]
+  "harfbuzz"              [shape="box",label="harfbuzz"]
+  "metis"                 [shape="box",label="metis"]
+  "hwloc"                 [shape="box",label="hwloc"]
+  "scotch"                [shape="box",label="scotch"]
+  "mafft"                 [shape="box",label="mafft"]
+  "muscle"                [shape="box",label="muscle"]
+  "quicktree"             [shape="box",label="quicktree"]
+  "sqlite"                [shape="box",label="sqlite"]
+  "aragorn"               [shape="box",label="aragorn"]
+  "barrnap"               [shape="box",label="barrnap"]
+  "infernal"              [shape="box",label="infernal"]
+  "parallel"              [shape="box",label="parallel"]
+  "prodigal"              [shape="box",label="prodigal"]
+  "tbl2asn"               [shape="box",label="tbl2asn"]
+  "fasta"                 [shape="box",label="fasta"]
+  "gdbm"                  [shape="box",label="gdbm"]
+  "jellyfish"             [shape="box",label="jellyfish"]
+  "abyss"                 [shape="box",label="abyss"]
+  "allpaths-lg"           [shape="box",label="allpaths-lg"]
+  "cegma"                 [shape="box",label="cegma"]
+  "kat"                   [shape="box",label="kat"]
+  "musket"                [shape="box",label="musket"]
+  "platanus"              [shape="box",label="platanus"]
+  "quake"                 [shape="box",label="quake"]
+  "quast"                 [shape="box",label="quast"]
+  "sickle"                [shape="box",label="sickle"]
+  "soapdenovo"            [shape="box",label="soapdenovo"]
+  "velvet"                [shape="box",label="velvet"]
+  "rmblast"               [shape="box",label="rmblast"]
+  "trf"                   [shape="box",label="trf"]
+  "recon"                 [shape="box",label="recon"]
+  "repeatmasker"          [shape="box",label="repeatmasker"]
+  "repeatscout"           [shape="box",label="repeatscout"]
+  "lp_solve"              [shape="box",label="lp_solve"]
+  "gtk+"                  [shape="box",label="gtk+"]
+  "sqlite3"               [shape="box",label="sqlite3"]
+  "bamtools"              [shape="box",label="bamtools"]
+  "bowtie"                [shape="box",label="bowtie"]
+  "bowtie2"               [shape="box",label="bowtie2"]
+  "blat"                  [shape="box",label="blat"]
+  "gmap-gsnap"            [shape="box",label="gmap-gsnap"]
+  "igraph"                [shape="box",label="igraph"]
+  "picard-tools"          [shape="box",label="picard-tools"]
+
+  subgraph "cluster_independent" {
+    label = <<font point-size="15"><br/></font>Safe to Remove>;
+    style = "filled";
+    color = "invis";
+    graph [fontname="Helvetica-LightOblique",fontsize="24"];
+    rank = "source";
+    fillcolor = "#F0F0F0";
+    margin = "25,1";
+    "genemarks"               [shape="box",label="genemarks"]
+    "zsh-syntax-highlighting" [shape="box",label="zsh-syntax-highlighting"]
+    "eigen"                   [shape="box",label="eigen"]
+    "brew-cask"               [shape="box",label="brew-cask"]
+    "ascii_plots"             [shape="box",label="ascii_plots"]
+    "snoscan"                 [shape="box",label="snoscan"]
+    "cap3"                    [shape="box",label="cap3"]
+    "markdown"                [shape="box",label="markdown"]
+    "daligner"                [shape="box",label="daligner"]
+    "rampart"                 [shape="box",label="rampart"]
+    "littler"                 [shape="box",label="littler"]
+    "celera-assembler"        [shape="box",label="celera-assembler"]
+    "multimarkdown"           [shape="box",label="multimarkdown"]
+    "datamash"                [shape="box",label="datamash"]
+    "htop-osx"                [shape="box",label="htop-osx"]
+    "snap"                    [shape="box",label="snap"]
+    "cube"                    [shape="box",label="cube"]
+    "blobology"               [shape="box",label="blobology"]
+    "swig"                    [shape="box",label="swig"]
+    "watch"                   [shape="box",label="watch"]
+    "hmmer2"                  [shape="box",label="hmmer2"]
+    "prokka"                  [shape="box",label="prokka"]
+    "snpeff"                  [shape="box",label="snpeff"]
+    "macvim"                  [shape="box",label="macvim"]
+    "ensembl-tools"           [shape="box",label="ensembl-tools"]
+    "blasr"                   [shape="box",label="blasr"]
+    "guile"                   [shape="box",label="guile"]
+    "scarpa"                  [shape="box",label="scarpa"]
+    "kmerstream"              [shape="box",label="kmerstream"]
+    "mir-prefer"              [shape="box",label="mir-prefer"]
+    "libyaml"                 [shape="box",label="libyaml"]
+    "mercurial"               [shape="box",label="mercurial"]
+    "bam-readcount"           [shape="box",label="bam-readcount"]
+    "pstree"                  [shape="box",label="pstree"]
+    "bioawk"                  [shape="box",label="bioawk"]
+    "nextflow"                [shape="box",label="nextflow"]
+    "amos"                    [shape="box",label="amos"]
+    "biocgal"                 [shape="box",label="biocgal"]
+    "ropebwt2"                [shape="box",label="ropebwt2"]
+    "realpath"                [shape="box",label="realpath"]
+    "qhull"                   [shape="box",label="qhull"]
+    "sga"                     [shape="box",label="sga"]
+    "repeatmodeler"           [shape="box",label="repeatmodeler"]
+    "seqtk"                   [shape="box",label="seqtk"]
+    "texi2html"               [shape="box",label="texi2html"]
+    "seqtools"                [shape="box",label="seqtools"]
+    "vimpager"                [shape="box",label="vimpager"]
+    "uniqtag"                 [shape="box",label="uniqtag"]
+    "sais"                    [shape="box",label="sais"]
+    "dsk"                     [shape="box",label="dsk"]
+    "xvid"                    [shape="box",label="xvid"]
+    "qualimap"                [shape="box",label="qualimap"]
+    "edena"                   [shape="box",label="edena"]
+    "qt5"                     [shape="box",label="qt5"]
+    "mtl"                     [shape="box",label="mtl"]
+    "qrupdate"                [shape="box",label="qrupdate"]
+    "gawk"                    [shape="box",label="gawk"]
+    "maven"                   [shape="box",label="maven"]
+    "bwa"                     [shape="box",label="bwa"]
+    "haskell-platform"        [shape="box",label="haskell-platform"]
+    "wget"                    [shape="box",label="wget"]
+    "novoalign"               [shape="box",label="novoalign"]
+    "doxygen"                 [shape="box",label="doxygen"]
+    "last"                    [shape="box",label="last"]
+    "gnu-sed"                 [shape="box",label="gnu-sed"]
+    "sopra"                   [shape="box",label="sopra"]
+    "consed"                  [shape="box",label="consed"]
+    "data-science-toolbox"    [shape="box",label="data-science-toolbox"]
+    "maker"                   [shape="box",label="maker"]
+    "biopieces"               [shape="box",label="biopieces"]
+    "genometools"             [shape="box",label="genometools"]
+    "plink"                   [shape="box",label="plink"]
+    "pbzip2"                  [shape="box",label="pbzip2"]
+    "augustus"                [shape="box",label="augustus"]
+    "graphviz"                [shape="box",label="graphviz"]
+    "sspace"                  [shape="box",label="sspace"]
+    "abyss-explorer"          [shape="box",label="abyss-explorer"]
+    "trans-abyss"             [shape="box",label="trans-abyss"]
+    "pandoc"                  [shape="box",label="pandoc"]
+    "dbgfm"                   [shape="box",label="dbgfm"]
+    "bedops"                  [shape="box",label="bedops"]
+    "parmetis"                [shape="box",label="parmetis"]
+    "samskrit"                [shape="box",label="samskrit"]
+    "glpk"                    [shape="box",label="glpk"]
+    "gcc48"                   [shape="box",label="gcc48"]
+    "calc"                    [shape="box",label="calc"]
+    "trinity"                 [shape="box",label="trinity"]
+    "pseudogene"              [shape="box",label="pseudogene"]
+    "gist"                    [shape="box",label="gist"]
+    "hub"                     [shape="box",label="hub"]
+    "mira"                    [shape="box",label="mira"]
+    "yasm"                    [shape="box",label="yasm"]
+    "ropebwt"                 [shape="box",label="ropebwt"]
+    "cgap"                    [shape="box",label="cgap"]
+    "dash"                    [shape="box",label="dash"]
+    "wdiff"                   [shape="box",label="wdiff"]
+    "grep"                    [shape="box",label="grep"]
+    "edirect"                 [shape="box",label="edirect"]
+    "piler"                   [shape="box",label="piler"]
+    "fastascripts"            [shape="box",label="fastascripts"]
+    "faac"                    [shape="box",label="faac"]
+    "phlawd"                  [shape="box",label="phlawd"]
+    "phyml"                   [shape="box",label="phyml"]
+    "gnupg"                   [shape="box",label="gnupg"]
+    "tophat"                  [shape="box",label="tophat"]
+    "arpack"                  [shape="box",label="arpack"]
+    "rename"                  [shape="box",label="rename"]
+    "gaemr"                   [shape="box",label="gaemr"]
+    "modules"                 [shape="box",label="modules"]
+    "ant"                     [shape="box",label="ant"]
+    "trnascan"                [shape="box",label="trnascan"]
+    "bedtools"                [shape="box",label="bedtools"]
+    "texinfo"                 [shape="box",label="texinfo"]
+    "ray"                     [shape="box",label="ray"]
+    "primer3"                 [shape="box",label="primer3"]
+    "fltk"                    [shape="box",label="fltk"]
+    "lame"                    [shape="box",label="lame"]
+    "make"                    [shape="box",label="make"]
+    "minia"                   [shape="box",label="minia"]
+    "coreutils"               [shape="box",label="coreutils"]
+    "glimmerhmm"              [shape="box",label="glimmerhmm"]
+    "mitofy"                  [shape="box",label="mitofy"]
+    "zlib"                    [shape="box",label="zlib"]
+    "fastx_toolkit"           [shape="box",label="fastx_toolkit"]
+    "operasf"                 [shape="box",label="operasf"]
+    "pastix"                  [shape="box",label="pastix"]
+    "igv"                     [shape="box",label="igv"]
+    "fasttree"                [shape="box",label="fasttree"]
+    "glog"                    [shape="box",label="glog"]
+    "pigz"                    [shape="box",label="pigz"]
+    "dotwrp"                  [shape="box",label="dotwrp"]
+    "cpanminus"               [shape="box",label="cpanminus"]
+    "spades"                  [shape="box",label="spades"]
+    "glimmer3"                [shape="box",label="glimmer3"]
+    "diffutils"               [shape="box",label="diffutils"]
+    "brew-desc"               [shape="box",label="brew-desc"]
+    "kraken"                  [shape="box",label="kraken"]
+    "hello"                   [shape="box",label="hello"]
+    "q"                       [shape="box",label="q"]
+    "kmergenie"               [shape="box",label="kmergenie"]
+    "spark"                   [shape="box",label="spark"]
+    "beetl"                   [shape="box",label="beetl"]
+    "docker"                  [shape="box",label="docker"]
+    "bwtdisk"                 [shape="box",label="bwtdisk"]
+    "gsl"                     [shape="box",label="gsl"]
+    "bcftools"                [shape="box",label="bcftools"]
+  }
+
+  "abyss" -> "boost" 
+  "abyss" -> "google-sparsehash" 
+  "abyss" -> "open-mpi" 
+  "amos" -> "boost" 
+  "amos" -> "mummer" 
+  "arpack" -> "gcc" 
+  "arpack" -> "open-mpi" 
+  "arpack" -> "veclibfort" 
+  "ascii_plots" -> "git" 
+  "atk" -> "glib" 
+  "atk" -> "gobject-introspection" 
+  "atk" -> "pkg-config" 
+  "atk" -> "xz" 
+  "augustus" -> "boost" 
+  "automake" -> "autoconf" 
+  "bam-readcount" -> "cmake" 
+  "bam-readcount" -> "git" 
+  "bam-readcount" -> "samtools" 
+  "bamtools" -> "cmake" 
+  "barrnap" -> "hmmer" 
+  "bcftools" -> "htslib" 
+  "bdw-gc" -> "libatomic_ops" 
+  "bdw-gc" -> "pkg-config" 
+  "blasr" -> "hdf5" 
+  "blast" -> "boost" 
+  "blast" -> "jpeg" 
+  "blast" -> "libpng" 
+  "blast" -> "mysql" 
+  "blast" -> "pcre" 
+  "blast" -> "python" 
+  "blat" -> "libpng" 
+  "blobology" -> "blast" 
+  "blobology" -> "r" 
+  "blobology" -> "samtools" 
+  "boost" -> "python" 
+  "boost" -> "python3" 
+  "brew-cask" -> "git" 
+  "brew-desc" -> "git" 
+  "cairo" -> "fontconfig" 
+  "cairo" -> "freetype" 
+  "cairo" -> "glib" 
+  "cairo" -> "libpng" 
+  "cairo" -> "pixman" 
+  "cairo" -> "pkg-config" 
+  "cairo" -> "xz" 
+  "calc" -> "readline" 
+  "cegma" -> "blast" 
+  "cegma" -> "geneid" 
+  "cegma" -> "genewise" 
+  "cegma" -> "hmmer" 
+  "cgap" -> "blast" 
+  "cgap" -> "circos" 
+  "cgap" -> "imagemagick" 
+  "cgap" -> "mummer" 
+  "cgap" -> "ogdraw" 
+  "cgap" -> "phylip" 
+  "cgap" -> "unrar" 
+  "circos" -> "gd" 
+  "cloog" -> "gmp" 
+  "cloog" -> "isl" 
+  "cloog" -> "pkg-config" 
+  "cloog018" -> "gmp4" 
+  "cloog018" -> "isl011" 
+  "cloog018" -> "pkg-config" 
+  "coreutils" -> "xz" 
+  "cube" -> "qt" 
+  "diffutils" -> "xz" 
+  "docker" -> "git" 
+  "docker" -> "go" 
+  "dotwrp" -> "gcc" 
+  "eigen" -> "cmake" 
+  "exonerate" -> "glib" 
+  "exonerate" -> "pkg-config" 
+  "fastx_toolkit" -> "pkg-config" 
+  "flex" -> "gettext" 
+  "fltk" -> "jpeg" 
+  "fltk" -> "libpng" 
+  "fontconfig" -> "freetype" 
+  "fontconfig" -> "pkg-config" 
+  "freetype" -> "libpng" 
+  "gawk" -> "xz" 
+  "gcc" -> "cloog" 
+  "gcc" -> "gmp" 
+  "gcc" -> "isl" 
+  "gcc" -> "libmpc" 
+  "gcc" -> "mpfr" 
+  "gcc48" -> "cloog018" 
+  "gcc48" -> "gmp4" 
+  "gcc48" -> "isl011" 
+  "gcc48" -> "libmpc08" 
+  "gcc48" -> "mpfr2" 
+  "gd" -> "fontconfig" 
+  "gd" -> "freetype" 
+  "gd" -> "jpeg" 
+  "gd" -> "libpng" 
+  "gd" -> "libtiff" 
+  "gdk-pixbuf" -> "glib" 
+  "gdk-pixbuf" -> "gobject-introspection" 
+  "gdk-pixbuf" -> "jpeg" 
+  "gdk-pixbuf" -> "libpng" 
+  "gdk-pixbuf" -> "libtiff" 
+  "gdk-pixbuf" -> "pkg-config" 
+  "gdk-pixbuf" -> "xz" 
+  "genewise" -> "glib" 
+  "genewise" -> "pkg-config" 
+  "genometools" -> "cairo" 
+  "genometools" -> "pango" 
+  "genometools" -> "pkg-config" 
+  "gettext" -> "xz" 
+  "ghc" -> "gcc" 
+  "ghc" -> "gmp" 
+  "ghc" -> "xz" 
+  "glib" -> "gettext" 
+  "glib" -> "libffi" 
+  "glib" -> "pkg-config" 
+  "glib" -> "xz" 
+  "glimmer3" -> "elph" 
+  "glog" -> "gflags" 
+  "gmap-gsnap" -> "samtools" 
+  "gnuplot" -> "fontconfig" 
+  "gnuplot" -> "gd" 
+  "gnuplot" -> "jpeg" 
+  "gnuplot" -> "libpng" 
+  "gnuplot" -> "libtiff" 
+  "gnuplot" -> "lua" 
+  "gnuplot" -> "pkg-config" 
+  "gnuplot" -> "readline" 
+  "gobject-introspection" -> "glib" 
+  "gobject-introspection" -> "libffi" 
+  "gobject-introspection" -> "pkg-config" 
+  "gobject-introspection" -> "python" 
+  "gobject-introspection" -> "xz" 
+  "graphviz" -> "libpng" 
+  "graphviz" -> "pkg-config" 
+  "grep" -> "pcre" 
+  "grep" -> "xz" 
+  "gtk+" -> "atk" 
+  "gtk+" -> "cairo" 
+  "gtk+" -> "gdk-pixbuf" 
+  "gtk+" -> "glib" 
+  "gtk+" -> "gobject-introspection" 
+  "gtk+" -> "jpeg" 
+  "gtk+" -> "libtiff" 
+  "gtk+" -> "pango" 
+  "gtk+" -> "pkg-config" 
+  "gtk+" -> "xz" 
+  "guile" -> "bdw-gc" 
+  "guile" -> "gmp" 
+  "guile" -> "libffi" 
+  "guile" -> "libtool" 
+  "guile" -> "libunistring" 
+  "guile" -> "pkg-config" 
+  "guile" -> "readline" 
+  "harfbuzz" -> "cairo" 
+  "harfbuzz" -> "freetype" 
+  "harfbuzz" -> "glib" 
+  "harfbuzz" -> "icu4c" 
+  "harfbuzz" -> "pkg-config" 
+  "haskell-platform" -> "ghc" 
+  "hdf5" -> "szip" 
+  "htop-osx" -> "autoconf" 
+  "htop-osx" -> "automake" 
+  "htop-osx" -> "libtool" 
+  "hwloc" -> "pkg-config" 
+  "imagemagick" -> "freetype" 
+  "imagemagick" -> "jpeg" 
+  "imagemagick" -> "libpng" 
+  "imagemagick" -> "libtool" 
+  "imagemagick" -> "pkg-config" 
+  "imagemagick" -> "xz" 
+  "isl" -> "gmp" 
+  "isl011" -> "gmp4" 
+  "kat" -> "boost" 
+  "kat" -> "gnuplot" 
+  "kat" -> "jellyfish-1.1" 
+  "kat" -> "pkg-config" 
+  "kat" -> "seqan" 
+  "kmergenie" -> "r" 
+  "libmpc" -> "gmp" 
+  "libmpc" -> "mpfr" 
+  "libmpc08" -> "gmp4" 
+  "libmpc08" -> "mpfr2" 
+  "libtiff" -> "jpeg" 
+  "littler" -> "r" 
+  "macvim" -> "cscope" 
+  "macvim" -> "python" 
+  "macvim" -> "python3" 
+  "makedepend" -> "pkg-config" 
+  "maker" -> "blast" 
+  "maker" -> "exonerate" 
+  "maker" -> "open-mpi" 
+  "metis" -> "cmake" 
+  "mir-prefer" -> "samtools" 
+  "mir-prefer" -> "viennarna" 
+  "mira" -> "boost" 
+  "mira" -> "docbook" 
+  "mira" -> "expat" 
+  "mira" -> "flex" 
+  "mira" -> "google-perftools" 
+  "mpfr" -> "gmp" 
+  "mpfr2" -> "gmp4" 
+  "mtl" -> "boost" 
+  "multimarkdown" -> "git" 
+  "mysql" -> "cmake" 
+  "mysql" -> "openssl" 
+  "ogdraw" -> "imagemagick" 
+  "open-mpi" -> "gcc" 
+  "open-mpi" -> "libevent" 
+  "openssl" -> "makedepend" 
+  "pandoc" -> "cabal-install" 
+  "pandoc" -> "ghc" 
+  "pandoc" -> "git" 
+  "pandoc" -> "gmp" 
+  "pango" -> "cairo" 
+  "pango" -> "fontconfig" 
+  "pango" -> "glib" 
+  "pango" -> "gobject-introspection" 
+  "pango" -> "harfbuzz" 
+  "pango" -> "pkg-config" 
+  "pango" -> "xz" 
+  "parmetis" -> "cmake" 
+  "parmetis" -> "metis" 
+  "parmetis" -> "open-mpi" 
+  "pastix" -> "gcc" 
+  "pastix" -> "hwloc" 
+  "pastix" -> "open-mpi" 
+  "pastix" -> "scotch" 
+  "phlawd" -> "mafft" 
+  "phlawd" -> "muscle" 
+  "phlawd" -> "quicktree" 
+  "phlawd" -> "sqlite" 
+  "piler" -> "muscle" 
+  "pixman" -> "pkg-config" 
+  "platanus" -> "gcc" 
+  "prokka" -> "aragorn" 
+  "prokka" -> "barrnap" 
+  "prokka" -> "blast" 
+  "prokka" -> "hmmer" 
+  "prokka" -> "infernal" 
+  "prokka" -> "parallel" 
+  "prokka" -> "prodigal" 
+  "prokka" -> "tbl2asn" 
+  "pseudogene" -> "blast" 
+  "pseudogene" -> "fasta" 
+  "python" -> "gdbm" 
+  "python" -> "openssl" 
+  "python" -> "pkg-config" 
+  "python" -> "readline" 
+  "python" -> "sqlite" 
+  "qhull" -> "cmake" 
+  "qrupdate" -> "gcc" 
+  "qrupdate" -> "veclibfort" 
+  "qt5" -> "pkg-config" 
+  "quake" -> "boost" 
+  "quake" -> "jellyfish" 
+  "quake" -> "r" 
+  "r" -> "cairo" 
+  "r" -> "gcc" 
+  "r" -> "gettext" 
+  "r" -> "jpeg" 
+  "r" -> "libtiff" 
+  "r" -> "readline" 
+  "rampart" -> "abyss" 
+  "rampart" -> "allpaths-lg" 
+  "rampart" -> "cegma" 
+  "rampart" -> "kat" 
+  "rampart" -> "musket" 
+  "rampart" -> "platanus" 
+  "rampart" -> "quake" 
+  "rampart" -> "quast" 
+  "rampart" -> "sickle" 
+  "rampart" -> "soapdenovo" 
+  "rampart" -> "velvet" 
+  "ray" -> "git" 
+  "ray" -> "open-mpi" 
+  "realpath" -> "gettext" 
+  "repeatmasker" -> "hmmer" 
+  "repeatmasker" -> "rmblast" 
+  "repeatmasker" -> "trf" 
+  "repeatmodeler" -> "recon" 
+  "repeatmodeler" -> "repeatmasker" 
+  "repeatmodeler" -> "repeatscout" 
+  "repeatmodeler" -> "rmblast" 
+  "repeatmodeler" -> "trf" 
+  "rmblast" -> "blast" 
+  "sais" -> "cmake" 
+  "samskrit" -> "git" 
+  "scarpa" -> "lp_solve" 
+  "seqtools" -> "glib" 
+  "seqtools" -> "gtk+" 
+  "seqtools" -> "pkg-config" 
+  "seqtools" -> "sqlite3" 
+  "sga" -> "autoconf" 
+  "sga" -> "automake" 
+  "sga" -> "bamtools" 
+  "sga" -> "google-sparsehash" 
+  "spades" -> "cmake" 
+  "sqlite" -> "readline" 
+  "sspace" -> "bowtie" 
+  "swig" -> "pcre" 
+  "tophat" -> "boost" 
+  "tophat" -> "bowtie2" 
+  "tophat" -> "samtools" 
+  "trans-abyss" -> "abyss" 
+  "trans-abyss" -> "blat" 
+  "trans-abyss" -> "bowtie2" 
+  "trans-abyss" -> "gmap-gsnap" 
+  "trans-abyss" -> "igraph" 
+  "trans-abyss" -> "picard-tools" 
+  "trans-abyss" -> "samtools" 
+  "trinity" -> "bowtie" 
+  "veclibfort" -> "gcc" 
+  "viennarna" -> "python" 
+  "wget" -> "openssl" 
+  "yasm" -> "python" 
+}

@@ -1,0 +1,144 @@
+digraph bioinformatics {
+  "mummer"                [shape="box",label="mummer"]
+  "samtools"              [shape="box",label="samtools"]
+  "hmmer"                 [shape="box",label="hmmer"]
+  "blast"                 [shape="box",label="blast"]
+  "jellyfish-1.1"         [shape="box",label="jellyfish-1.1"]
+  "exonerate"             [shape="box",label="exonerate"]
+  "aragorn"               [shape="box",label="aragorn"]
+  "infernal"              [shape="box",label="infernal"]
+  "prodigal"              [shape="box",label="prodigal"]
+  "fasta"                 [shape="box",label="fasta"]
+  "jellyfish"             [shape="box",label="jellyfish"]
+  "abyss"                 [shape="box",label="abyss"]
+  "allpaths-lg"           [shape="box",label="allpaths-lg"]
+  "cegma"                 [shape="box",label="cegma"]
+  "musket"                [shape="box",label="musket"]
+  "platanus"              [shape="box",label="platanus"]
+  "quake"                 [shape="box",label="quake"]
+  "quast"                 [shape="box",label="quast"]
+  "rmblast"               [shape="box",label="rmblast"]
+  "trf"                   [shape="box",label="trf"]
+  "recon"                 [shape="box",label="recon"]
+  "repeatscout"           [shape="box",label="repeatscout"]
+  "bowtie"                [shape="box",label="bowtie"]
+  "bowtie2"               [shape="box",label="bowtie2"]
+  "gmap-gsnap"            [shape="box",label="gmap-gsnap"]
+    "snoscan"                 [shape="box",label="snoscan"]
+    "snap"                    [shape="box",label="snap"]
+    "blobology"               [shape="box",label="blobology"]
+    "hmmer2"                  [shape="box",label="hmmer2"]
+    "prokka"                  [shape="box",label="prokka"]
+    "blasr"                   [shape="box",label="blasr"]
+    "scarpa"                  [shape="box",label="scarpa"]
+    "kmerstream"              [shape="box",label="kmerstream"]
+    "sga"                     [shape="box",label="sga"]
+    "uniqtag"                 [shape="box",label="uniqtag"]
+    "bwa"                     [shape="box",label="bwa"]
+    "last"                    [shape="box",label="last"]
+    "sopra"                   [shape="box",label="sopra"]
+    "consed"                  [shape="box",label="consed"]
+    "maker"                   [shape="box",label="maker"]
+    "genometools"             [shape="box",label="genometools"]
+    "abyss-explorer"          [shape="box",label="abyss-explorer"]
+    "trans-abyss"             [shape="box",label="trans-abyss"]
+    "cgap"                    [shape="box",label="cgap"]
+    "fastascripts"            [shape="box",label="fastascripts"]
+    "phlawd"                  [shape="box",label="phlawd"]
+    "trnascan"                [shape="box",label="trnascan"]
+    "bedtools"                [shape="box",label="bedtools"]
+    "glimmerhmm"              [shape="box",label="glimmerhmm"]
+    "operasf"                 [shape="box",label="operasf"]
+    "igv"                     [shape="box",label="igv"]
+    "spades"                  [shape="box",label="spades"]
+    "kmergenie"               [shape="box",label="kmergenie"]
+  "abyss" -> "boost" 
+  "abyss" -> "google-sparsehash" 
+  "abyss" -> "open-mpi" 
+  "amos" -> "mummer" 
+  "bam-readcount" -> "samtools" 
+  "barrnap" -> "hmmer" 
+  "blasr" -> "hdf5" 
+  "blast" -> "boost" 
+  "blast" -> "jpeg" 
+  "blast" -> "libpng" 
+  "blast" -> "mysql" 
+  "blast" -> "pcre" 
+  "blast" -> "python" 
+  "blobology" -> "blast" 
+  "blobology" -> "r" 
+  "blobology" -> "samtools" 
+  "cegma" -> "blast" 
+  "cegma" -> "geneid" 
+  "cegma" -> "genewise" 
+  "cegma" -> "hmmer" 
+  "cgap" -> "blast" 
+  "cgap" -> "circos" 
+  "cgap" -> "imagemagick" 
+  "cgap" -> "mummer" 
+  "cgap" -> "ogdraw" 
+  "cgap" -> "phylip" 
+  "cgap" -> "unrar" 
+  "exonerate" -> "glib" 
+  "exonerate" -> "pkg-config" 
+  "genometools" -> "cairo" 
+  "genometools" -> "pango" 
+  "genometools" -> "pkg-config" 
+  "gmap-gsnap" -> "samtools" 
+  "kat" -> "jellyfish-1.1" 
+  "kmergenie" -> "r" 
+  "maker" -> "blast" 
+  "maker" -> "exonerate" 
+  "maker" -> "open-mpi" 
+  "mir-prefer" -> "samtools" 
+  "phlawd" -> "mafft" 
+  "phlawd" -> "muscle" 
+  "phlawd" -> "quicktree" 
+  "phlawd" -> "sqlite" 
+  "platanus" -> "gcc" 
+  "prokka" -> "aragorn" 
+  "prokka" -> "barrnap" 
+  "prokka" -> "blast" 
+  "prokka" -> "hmmer" 
+  "prokka" -> "infernal" 
+  "prokka" -> "parallel" 
+  "prokka" -> "prodigal" 
+  "prokka" -> "tbl2asn" 
+  "pseudogene" -> "blast" 
+  "pseudogene" -> "fasta" 
+  "quake" -> "boost" 
+  "quake" -> "jellyfish" 
+  "quake" -> "r" 
+  "rampart" -> "abyss" 
+  "rampart" -> "allpaths-lg" 
+  "rampart" -> "cegma" 
+  "rampart" -> "musket" 
+  "rampart" -> "platanus" 
+  "rampart" -> "quake" 
+  "rampart" -> "quast" 
+  "repeatmasker" -> "hmmer" 
+  "repeatmasker" -> "rmblast" 
+  "repeatmasker" -> "trf" 
+  "repeatmodeler" -> "recon" 
+  "repeatmodeler" -> "repeatscout" 
+  "repeatmodeler" -> "rmblast" 
+  "repeatmodeler" -> "trf" 
+  "rmblast" -> "blast" 
+  "scarpa" -> "lp_solve" 
+  "sga" -> "autoconf" 
+  "sga" -> "automake" 
+  "sga" -> "bamtools" 
+  "sga" -> "google-sparsehash" 
+  "spades" -> "cmake" 
+  "sspace" -> "bowtie" 
+  "tophat" -> "bowtie2" 
+  "tophat" -> "samtools" 
+  "trans-abyss" -> "abyss" 
+  "trans-abyss" -> "blat" 
+  "trans-abyss" -> "bowtie2" 
+  "trans-abyss" -> "gmap-gsnap" 
+  "trans-abyss" -> "igraph" 
+  "trans-abyss" -> "picard-tools" 
+  "trans-abyss" -> "samtools" 
+  "trinity" -> "bowtie" 
+}
