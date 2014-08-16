@@ -17,22 +17,32 @@ Open science
 ================================================================================
 
 + Publish all research outputs
-+ Self-archive manuscripts and pre-prints
++ Archive manuscripts
 + Sign peer reviews
-+ Even publish reviews, if the manuscript is public
++ Participate in public discussion, like [Twitter][]
+
+[Twitter]: http://twitter.com/
 
 Publish all research outputs
 ================================================================================
 
-+ Data
-+ Scripts
-+ Manuscript
-+ Publication
++ Posters on [figshare][]
++ Slides on [SpeakerDeck][] or [slideshare][]
++ Code and data in [GitHub][]
++ Data in a plain-text format, like TSV
++ Archive manuscript on [bioRxiv][] or [arXiv][]
+
+[figshare]: http://figshare.com/
+[SpeakerDeck]: https://speakerdeck.com/
+[slideshare]: http://www.slideshare.net/
+[GitHub]: https://github.com/
+[bioRxiv]: http://biorxiv.org/
+[arXiv]: http://arxiv.org/
 
 Repeatable science
 ================================================================================
 
-+ Given the same data and scripts&hellip;
++ Given the same data and code&hellip;
 + Reproduce the same results
 + At least by you, this should be the minimum bar
 + Hopefully repeatable by others as well
@@ -40,10 +50,10 @@ Repeatable science
 Reproducible science
 ================================================================================
 
-+ Given the manuscript, someone else can
++ Given the manuscript, someone else can&hellip;
 + Repeat the experiment
 + Analyse the data
-+ Come to the same conclusion
++ Arrive at the same conclusion
 
 Repeatable vs. reproducible science
 ================================================================================
@@ -56,7 +66,7 @@ Managing software versions and dependencies
 ================================================================================
 
 + Use [Homebrew][] or [Linuxbrew][] and [Homebrew-science][] to install software
-+ In the publication, to report all versions of all software used, only need to write&hellip;
++ To report versions of all software used, need only write&hellip;
 
 > Homebrew was used to install the required software from Homebrew-science version 2014-08.
 
@@ -88,23 +98,26 @@ Version control
 + Maybe not big data
 + Experimental design data
 + Results and summary statistics
-+ All data in tab-separated values (TSV) format, where possible
++ Data in TSV format
 + GitHub renders TSV pretty!
 
 ![GitHub renders TSV pretty!](GitHub-tsv.png)
 
-[GitHub]: https://github.com/
 
-Make
+A reproducible manuscript
 ================================================================================
+
+One Makefile script
+-------------------
 
 + Downloads the data
 + Runs the analyses
-+ Generates the tabular results
-+ Renders the figures
-+ Renders the manuscript
++ Generates the tables
++ Renders the figures using R and ggplot2
++ Renders the supplementary material using RMarkdown
++ Renders the manuscript using Pandoc
 
-Turn this
+Turns this
 ================================================================================
 
 ![UniqTag markdown](UniqTag-md.png)
@@ -114,11 +127,87 @@ Into this
 
 ![UniqTag PDF](UniqTag-pdf.png)
 
-Make for the pipeline
+Document workflow
 ================================================================================
 
-RMarkdown for the analyses
+Courtesy of [Plain Text, Papers, Pandoc][] by [Kieran Healy][]
+
+![I promise this is less insane than it appears](workflow-rmd-md.png)
+
+[Plain Text, Papers, Pandoc]: http://kieranhealy.org/blog/archives/2014/01/23/plain-text/
+[Kieran Healy]: http://kieranhealy.org/
+
+Make is beautiful
 ================================================================================
+
++ Give it rules to create one type of file from another
++ Tell it what you files you want to create
++ Make looks at which files you have
++ and figures out how to create the files you want
+
+Bioinformatics pipeline using Make
+================================================================================
+
+```Makefile
+%.bam: %.sam
+	samtools view -Sb $< >$@
+
+%.sort.bam: %.bam
+	samtools sort $< $*.sort
+
+%.bam.bai: %.bam
+	samtools index $<
+```
+
+```sh
+touch hello.sam
+make hello.sort.bam.bai
+```
+
+```sh
+samtools view -Sb hello.sam >hello.bam
+samtools sort hello.bam hello.sort
+samtools index hello.sort.bam
+```
 
 Markdown for the manuscript
 ================================================================================
+
+Markdown is a simple typesetting language
+
+```markdown
+A header
+========
+
+A list:
+
++ This text is *italic*
++ This text is **bold**
+```
+
+A header
+--------
+
+A list:
+
++ This text is *italic*
++ This text is **bold**
+
+RMarkdown for the supplementary material
+================================================================================
+
++ RMarkdown interleaves text with code in R
++ Code that calculates summary statistics
++ Code that generates tables
++ Code that renders figures
+
+Pandoc
+================================================================================
+
+Pandoc converts between every file format known to man (just about)
+
++ Markdown
++ HTML
++ LaTeX
++ PDF
++ ODT and docx (yes, really)
