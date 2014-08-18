@@ -18,7 +18,7 @@ open-science.html: homebrew-bioinformatics.png
 
 %.html: %.md
 	pandoc -st revealjs -V theme:sky $< \
-		|sed 's/history: true/slideNumber: true/' >$@
+		|sed 's/history: true,/& slideNumber: true,/' >$@
 
 # Render a graph of the dependencies of bioinformatics software in Homebrew-science
 
