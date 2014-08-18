@@ -5,6 +5,9 @@ date: '2014-08-18'
 ---
 
 Open, reproducible science using Make, RMarkdown and Pandoc
+============================================================
+
+Open, reproducible science using Make, RMarkdown and Pandoc
 ------------------------------------------------------------
 
 Shaun Jackman [\@sjackman][]
@@ -18,7 +21,7 @@ Shaun Jackman [\@sjackman][]
 [cc-by]: http://creativecommons.org/licenses/by/4.0/
 
 Shaun Jackman
-================================================================================
+------------------------------------------------------------
 
 [Genome Sciences Centre][], BC Cancer Agency
 
@@ -35,7 +38,7 @@ Vancouver, Canada
 [sjackman.ca]: http://sjackman.ca
 
 Open and reproducible science
-================================================================================
+------------------------------------------------------------
 
 + Open science
 + Repeatable science
@@ -46,6 +49,9 @@ Open and reproducible science
 Open science
 ================================================================================
 
+Open science
+------------------------------------------------------------
+
 + Publish all research outputs
 + Archive manuscripts
 + Publish papers in open-access journals
@@ -55,7 +61,7 @@ Open science
 [Twitter]: http://twitter.com/
 
 Publish all research outputs
-================================================================================
+------------------------------------------------------------
 
 + Slides on [slides], [SpeakerDeck][] or [slideshare][]
 + Posters on [figshare][]
@@ -71,8 +77,11 @@ Publish all research outputs
 [bioRxiv]: http://biorxiv.org/
 [arXiv]: http://arxiv.org/
 
-Repeatable science
+Reproducible science
 ================================================================================
+
+Repeatable science
+------------------------------------------------------------
 
 Given the same data and code&hellip;
 
@@ -83,7 +92,7 @@ Given the same data and code&hellip;
 + Hopefully repeatable by others as well
 
 Reproducible science
-================================================================================
+------------------------------------------------------------
 
 Given the manuscript&hellip;
 
@@ -96,7 +105,7 @@ Another scientist can
 + Draw the same conclusion
 
 Repeatable vs. reproducible science
-================================================================================
+------------------------------------------------------------
 
 Reproducibility is fundamental to science
 
@@ -105,8 +114,11 @@ Reproducibility is fundamental to science
 + Often we don't even accomplish repeatable science
 + So let's start there
 
-Managing software
+Repeatable science
 ================================================================================
+
+Managing software
+------------------------------------------------------------
 
 + Install software using [Homebrew][] or [Linuxbrew][] and [Homebrew-science][]
 + To report versions of all software used, need only write&hellip;
@@ -118,14 +130,14 @@ Managing software
 [Homebrew-science]: http://brew.sh/homebrew-science/
 
 Homebrew is the solution to dependency hell
-================================================================================
+------------------------------------------------------------
 
 [Homebrew][] installs all dependencies automatically
 
 ![Dependencies of bioinformatics tools in Homebrew](homebrew-bioinformatics.png)
 
 Publish data
-================================================================================
+------------------------------------------------------------
 
 > Best way to set back your competitors is to release your #data. That way they have to analyze their data & *your* data
 
@@ -138,7 +150,7 @@ Publish data
 [A History of Bioinformatics (in the Year 2039)]: http://www.slideshare.net/c.titus.brown/2014-bosckeynote
 
 Version control
-================================================================================
+------------------------------------------------------------
 
 + git/[GitHub][] for (almost) everything!
 + Maybe not big, raw data
@@ -154,7 +166,8 @@ Version control
 A reproducible manuscript
 ================================================================================
 
-### One Makefile script
+One Makefile script
+------------------------------------------------------------
 
 + Downloads the data
 + Runs the command-line programs
@@ -170,21 +183,21 @@ A reproducible manuscript
 [Pandoc]: http://johnmacfarlane.net/pandoc/
 
 Turns this
-================================================================================
+------------------------------------------------------------
 
 ![[UniqTag Markdown][]](UniqTag-md.png)
 
 [UniqTag Markdown]: https://github.com/sjackman/uniqtag-paper/blob/master/UniqTag.md
 
 Into this
-================================================================================
+------------------------------------------------------------
 
 ![[UniqTag PDF][]](UniqTag-pdf.png)
 
 [UniqTag PDF]: http://biorxiv.org/content/early/2014/08/01/007583.full.pdf
 
 Workflow
-================================================================================
+------------------------------------------------------------
 
 [Plain Text, Papers, Pandoc][] by [Kieran Healy][]
 
@@ -194,7 +207,7 @@ Workflow
 [Kieran Healy]: http://kieranhealy.org/
 
 Make is beautiful
-================================================================================
+------------------------------------------------------------
 
 | Tell Make how to create one type of file from another
 | and which files you want to create.
@@ -205,7 +218,7 @@ Make is beautiful
 | and figures out how to create the files that you want.
 
 Make example
-================================================================================
+------------------------------------------------------------
 
 ```Makefile
 %.bam: %.sam
@@ -230,7 +243,7 @@ samtools index hello.sort.bam
 ```
 
 Markdown for the manuscript
-================================================================================
+------------------------------------------------------------
 
 Markdown is a plain-text typesetting language
 
@@ -244,8 +257,7 @@ A list:
 + This text is **bold**
 ```
 
-A header
---------
+### A header
 
 A list:
 
@@ -253,7 +265,7 @@ A list:
 + This text is **bold**
 
 RMarkdown
-================================================================================
+------------------------------------------------------------
 
 + [RMarkdown][] interleaves text with code in [R][]
 + Code that calculates summary statistics
@@ -262,7 +274,7 @@ RMarkdown
 + [RMarkdown][] is ideal for supplementary material
 
 Pandoc
-================================================================================
+------------------------------------------------------------
 
 | [Pandoc][] renders attractive documents and slides
 | from plain-text typesetting formats
@@ -276,7 +288,7 @@ It converts between every format known (just about)
 + ODT and docx (yes, really)
 
 Shaun Jackman
-================================================================================
+------------------------------------------------------------
 
 [Genome Sciences Centre][], BC Cancer Agency
 
