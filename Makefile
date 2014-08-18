@@ -1,7 +1,7 @@
-all: open-science.html open-science.pdf
+all: open-science.html
 
 clean:
-	rm -f open-science.html open-science.pdf
+	rm -f open-science.html
 
 install-deps:
 	brew install pandoc
@@ -12,16 +12,13 @@ install-deps:
 
 # Dependencies
 
-open-science.pdf: homebrew-bioinformatics.png
+open-science.html: homebrew-bioinformatics.png
 
 # Rules
 
 %.html: %.md
 	pandoc -st revealjs -V theme:sky $< \
 		|sed 's/history: true/slideNumber: true/' >$@
-
-%.pdf: %.md
-	pandoc -t beamer -o $@ $<
 
 # Render a graph of the dependencies of bioinformatics software in Homebrew-science
 
