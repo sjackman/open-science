@@ -1,8 +1,38 @@
 ---
-title: 'Open and reproducible science using Make, RMarkdown and Pandoc'
+title: 'Open, reproducible science using Make, RMarkdown and Pandoc'
 author: 'Shaun Jackman'
 date: '2014-08-18'
 ---
+
+Open, reproducible science using Make, RMarkdown and Pandoc
+------------------------------------------------------------
+
+Shaun Jackman [\@sjackman][]
+
+2014-08-18
+
+[\@sjackman]: http://twitter.com/sjackman
+
+[![Creative Commons Attribution License](cc-by.png)][cc-by]
+
+[cc-by]: http://creativecommons.org/licenses/by/4.0/
+
+Shaun Jackman
+================================================================================
+
+[Genome Sciences Centre][], BC Cancer Agency
+
+Vancouver, Canada
+
+[\@sjackman][]
+
+[github.com/sjackman][]
+
+[sjackman.ca][]
+
+[Genome Sciences Centre]: http://bcgsc.ca
+[github.com/sjackman]: https://github.com/sjackman
+[sjackman.ca]: http://sjackman.ca
 
 Open and reproducible science
 ================================================================================
@@ -18,6 +48,7 @@ Open science
 
 + Publish all research outputs
 + Archive manuscripts
++ Publish papers in open-access journals
 + Sign peer reviews
 + Participate in public discussion, like [Twitter][]
 
@@ -26,15 +57,16 @@ Open science
 Publish all research outputs
 ================================================================================
 
++ Slides on [slides], [SpeakerDeck][] or [slideshare][]
 + Posters on [figshare][]
-+ Slides on [SpeakerDeck][] or [slideshare][]
-+ Code and data in [GitHub][]
++ Code and data on [GitHub][]
 + Data in a plain-text format, like TSV
 + Archive manuscript on [bioRxiv][] or [arXiv][]
 
-[figshare]: http://figshare.com/
+[slides]: http://slides.com/
 [SpeakerDeck]: https://speakerdeck.com/
 [slideshare]: http://www.slideshare.net/
+[figshare]: http://figshare.com/
 [GitHub]: https://github.com/
 [bioRxiv]: http://biorxiv.org/
 [arXiv]: http://arxiv.org/
@@ -42,30 +74,41 @@ Publish all research outputs
 Repeatable science
 ================================================================================
 
-+ Given the same data and code&hellip;
+Given the same data and code&hellip;
+
+. . .
+
 + Reproduce the same results
-+ At least by you, this should be the minimum bar
++ At least by yourself, this should be the minimum bar
 + Hopefully repeatable by others as well
 
 Reproducible science
 ================================================================================
 
-+ Given the manuscript, someone else can&hellip;
+Given the manuscript&hellip;
+
+. . .
+
+Another scientist can
+
 + Repeat the experiment
 + Analyse the data
-+ Arrive at the same conclusion
++ Draw the same conclusion
 
 Repeatable vs. reproducible science
 ================================================================================
 
-+ Reproducibility is fundamental to science
+Reproducibility is fundamental to science
+
+. . .
+
 + Often we don't even accomplish repeatable science
 + So let's start there
 
-Managing software versions and dependencies
+Managing software
 ================================================================================
 
-+ Use [Homebrew][] or [Linuxbrew][] and [Homebrew-science][] to install software
++ Install software using [Homebrew][] or [Linuxbrew][] and [Homebrew-science][]
 + To report versions of all software used, need only write&hellip;
 
 > Homebrew was used to install the required software from Homebrew-science version 2014-08.
@@ -77,17 +120,20 @@ Managing software versions and dependencies
 Homebrew is the solution to dependency hell
 ================================================================================
 
+[Homebrew][] installs all dependencies automatically
+
 ![Dependencies of bioinformatics tools in Homebrew](homebrew-bioinformatics.png)
 
 Publish data
 ================================================================================
 
 > Best way to set back your competitors is to release your #data. That way they have to analyze their data & *your* data
-&mdash; @[ctitusbrown][]
+
+| C. Titus Brown [\@ctitusbrown][]
 | [BOSC 2014 keynote][]
 | [A History of Bioinformatics (in the Year 2039)][]
 
-[ctitusbrown]: https://twitter.com/ctitusbrown
+[\@ctitusbrown]: https://twitter.com/ctitusbrown
 [BOSC 2014 keynote]: http://video.open-bio.org/video/1/a-history-of-bioinformatics-in-the-year-2039
 [A History of Bioinformatics (in the Year 2039)]: http://www.slideshare.net/c.titus.brown/2014-bosckeynote
 
@@ -95,36 +141,47 @@ Version control
 ================================================================================
 
 + git/[GitHub][] for (almost) everything!
-+ Maybe not big data
-+ Experimental design data
-+ Results and summary statistics
-+ Data in TSV format
-+ GitHub renders TSV pretty!
++ Maybe not big, raw data
++ For experimental design data
++ For results and summary statistics
++ Data in a plain-text format, like TSV
++ GitHub [renders TSV][] pretty!
 
 ![GitHub renders TSV pretty!](GitHub-tsv.png)
 
+[renders TSV]: https://help.github.com/articles/rendering-csv-and-tsv-data
 
 A reproducible manuscript
 ================================================================================
 
-One Makefile script
+### One Makefile script
 
 + Downloads the data
-+ Runs the analyses
-+ Generates the tables
-+ Renders the figures using R and ggplot2
-+ Renders the supplementary material using RMarkdown
-+ Renders the manuscript using Pandoc
++ Runs the command-line programs
++ Performs the statistical analyses using [R][]
++ and Generates the TSV tables
++ Renders the figures using [ggplot2][]
++ Renders the supplementary material using [RMarkdown][]
++ Renders the manuscript using [Pandoc][]
+
+[R]: http://www.rstudio.com/
+[ggplot2]: http://ggplot2.org/
+[RMarkdown]: http://rmarkdown.rstudio.com/
+[Pandoc]: http://johnmacfarlane.net/pandoc/
 
 Turns this
 ================================================================================
 
-![UniqTag Markdown](UniqTag-md.png)
+![[UniqTag Markdown][]](UniqTag-md.png)
+
+[UniqTag Markdown]: https://github.com/sjackman/uniqtag-paper/blob/master/UniqTag.md
 
 Into this
 ================================================================================
 
-![UniqTag PDF](UniqTag-pdf.png)
+![[UniqTag PDF][]](UniqTag-pdf.png)
+
+[UniqTag PDF]: http://biorxiv.org/content/early/2014/08/01/007583.full.pdf
 
 Workflow
 ================================================================================
@@ -139,10 +196,13 @@ Workflow
 Make is beautiful
 ================================================================================
 
-+ Tell Make how to create one type of file from another
-+ and what you files you want to create
-+ Make looks at which files you have
-+ and figures out how to create the files you want
+| Tell Make how to create one type of file from another
+| and which files you want to create.
+
+. . .
+
+| Make looks at which files you have
+| and figures out how to create the files that you want.
 
 Make example
 ================================================================================
@@ -192,18 +252,22 @@ A list:
 + This text is *italic*
 + This text is **bold**
 
-RMarkdown for supplementary material
+RMarkdown
 ================================================================================
 
-+ RMarkdown interleaves text with code in R
++ [RMarkdown][] interleaves text with code in [R][]
 + Code that calculates summary statistics
 + Code that generates tables
-+ Code that renders figures
++ Code that renders figures using [ggplot2][]
++ [RMarkdown][] is ideal for supplementary material
 
 Pandoc
 ================================================================================
 
-Pandoc converts between every file format known (just about)
+| [Pandoc][] renders attractive documents and slides
+| from plain-text typesetting formats
+
+It converts between every format known (just about)
 
 + Markdown
 + HTML
@@ -218,14 +282,8 @@ Shaun Jackman
 
 Vancouver, Canada
 
-[Genome Sciences Centre]: http://bcgsc.ca
-
-@[sjackman][]
+[\@sjackman][]
 
 [github.com/sjackman][]
 
 [sjackman.ca][]
-
-[sjackman]: http://twitter.com/sjackman
-[github.com/sjackman]: https://github.com/sjackman
-[sjackman.ca]: http://sjackman.ca
