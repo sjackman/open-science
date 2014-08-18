@@ -17,7 +17,8 @@ open-science.pdf: homebrew-bioinformatics.png
 # Rules
 
 %.html: %.md
-	pandoc -st revealjs -V theme:sky -o $@ $<
+	pandoc -st revealjs -V theme:sky $< \
+		|sed 's/history: true/slideNumber: true/' >$@
 
 %.pdf: %.md
 	pandoc -t beamer -o $@ $<
