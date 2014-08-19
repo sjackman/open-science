@@ -15,8 +15,11 @@ Shaun Jackman [\@sjackman][]
 
 [![Creative Commons Attribution License](cc-by.png)][cc-by]
 
+[Fork me on GitHub!][]
+
 [\@sjackman]: http://twitter.com/sjackman
 [cc-by]: http://creativecommons.org/licenses/by/4.0/
+[Fork me on GitHub!]: https://github.com/sjackman/open-science
 
 Shaun Jackman
 ------------------------------------------------------------
@@ -59,13 +62,12 @@ Open science
 Publish all research outputs
 ------------------------------------------------------------
 
-+ Slides on [Slides][], [SpeakerDeck][] or [slideshare][]
++ Slides on [SpeakerDeck][] or [slideshare][]
 + Posters on [figshare][]
 + Code and data on [GitHub][]
 + Data in a plain-text format, like TSV
 + Archive manuscript on [bioRxiv][] or [arXiv][]
 
-[Slides]: http://slides.com/
 [SpeakerDeck]: https://speakerdeck.com/
 [slideshare]: http://www.slideshare.net/
 [figshare]: http://figshare.com/
@@ -296,8 +298,8 @@ fin
 Links
 ------------------------------------------------------------
 
-| [Slides][] | [SpeakerDeck][] | [slideshare][]
-| [figshare][] | [GitHub][] | [bioRxiv][] | [arXiv][]
+| [SpeakerDeck][] | [slideshare][] | [figshare][]
+| [GitHub][] | [bioRxiv][] | [arXiv][]
 | [Homebrew][] | [Linuxbrew][] | [Homebrew-science][]
 | [R][] | [ggplot2][] | [RMarkdown][] | [Pandoc][]
 | [Plain Text, Papers, Pandoc][]
@@ -305,6 +307,8 @@ Links
 [\@sjackman][] | [github.com/sjackman][] | [sjackman.ca][]
 
 [sjackman.github.io/open-science][]
+
+[Fork me on GitHub!][]
 
 [sjackman.github.io/open-science]: https://sjackman.github.io/open-science
 
