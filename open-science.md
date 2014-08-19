@@ -1,37 +1,33 @@
 ---
-title: 'Open, reproducible science using Make, RMarkdown and Pandoc'
+title: 'Open, reproducible science'
 author: 'Shaun Jackman'
 date: '2014-08-18'
 ---
 
-Open, reproducible science using Make, RMarkdown and Pandoc
-============================================================
-
-Open, reproducible science using Make, RMarkdown and Pandoc
+Open, reproducible science
 ------------------------------------------------------------
+
+### using Make, RMarkdown and Pandoc
 
 Shaun Jackman [\@sjackman][]
 
 2014-08-18
 
-[\@sjackman]: http://twitter.com/sjackman
-
 [![Creative Commons Attribution License](cc-by.png)][cc-by]
 
+[\@sjackman]: http://twitter.com/sjackman
 [cc-by]: http://creativecommons.org/licenses/by/4.0/
 
 Shaun Jackman
 ------------------------------------------------------------
 
-[Genome Sciences Centre][], BC Cancer Agency
+| [Genome Sciences Centre][], BC Cancer Agency
+| Vancouver, Canada
+| [\@sjackman][]
+| [github.com/sjackman][]
+| [sjackman.ca][]
 
-Vancouver, Canada
-
-[\@sjackman][]
-
-[github.com/sjackman][]
-
-[sjackman.ca][]
+![Photo](sjackman.jpg)
 
 [Genome Sciences Centre]: http://bcgsc.ca
 [github.com/sjackman]: https://github.com/sjackman
@@ -63,13 +59,13 @@ Open science
 Publish all research outputs
 ------------------------------------------------------------
 
-+ Slides on [slides], [SpeakerDeck][] or [slideshare][]
++ Slides on [Slides][], [SpeakerDeck][] or [slideshare][]
 + Posters on [figshare][]
 + Code and data on [GitHub][]
 + Data in a plain-text format, like TSV
 + Archive manuscript on [bioRxiv][] or [arXiv][]
 
-[slides]: http://slides.com/
+[Slides]: http://slides.com/
 [SpeakerDeck]: https://speakerdeck.com/
 [slideshare]: http://www.slideshare.net/
 [figshare]: http://figshare.com/
@@ -120,19 +116,18 @@ Repeatable science
 Managing software
 ------------------------------------------------------------
 
-+ Install software using [Homebrew][] or [Linuxbrew][] and [Homebrew-science][]
++ Install software using [Homebrew][] or [Linuxbrew][]
++ [Homebrew-science][] has tons of science software
 + To report versions of all software used, need only write&hellip;
 
-> Homebrew was used to install the required software from Homebrew-science version 2014-08.
+> We used Linuxbrew to install the required software from Homebrew-science version 2014-08.
 
 [Homebrew]: http://brew.sh
 [Linuxbrew]: http://brew.sh/linuxbrew/
 [Homebrew-science]: http://brew.sh/homebrew-science/
 
-Homebrew is the solution to dependency hell
+Homebrew navigates dependency hell
 ------------------------------------------------------------
-
-[Homebrew][] installs all dependencies automatically
 
 ![Dependencies of bioinformatics tools in Homebrew](homebrew-bioinformatics.png)
 
@@ -161,12 +156,18 @@ Version control
 
 ![GitHub renders TSV pretty!](GitHub-tsv.png)
 
+------------------------------------------------------------
+
+### GitHub [renders TSV][] pretty!
+
+![GitHub renders TSV pretty!](GitHub-tsv.png)
+
 [renders TSV]: https://help.github.com/articles/rendering-csv-and-tsv-data
 
 A reproducible manuscript
 ================================================================================
 
-One Makefile script
+One Makefile
 ------------------------------------------------------------
 
 + Downloads the data
@@ -197,6 +198,8 @@ Into this
 [UniqTag PDF]: http://biorxiv.org/content/early/2014/08/01/007583.full.pdf
 
 Workflow
+================================================================================
+
 ------------------------------------------------------------
 
 [Plain Text, Papers, Pandoc][] by [Kieran Healy][]
@@ -220,7 +223,7 @@ Make is beautiful
 Make example
 ------------------------------------------------------------
 
-```Makefile
+```makefile
 %.bam: %.sam
 	samtools view -Sb $< >$@
 
@@ -231,12 +234,12 @@ Make example
 	samtools index $<
 ```
 
-```sh
+```bash
 touch hello.sam
 make hello.sort.bam.bai
 ```
 
-```sh
+```bash
 samtools view -Sb hello.sam >hello.bam
 samtools sort hello.bam hello.sort
 samtools index hello.sort.bam
@@ -287,15 +290,31 @@ It converts between every format known (just about)
 + PDF
 + ODT and docx (yes, really)
 
+fin
+================================================================================
+
+Links
+------------------------------------------------------------
+
+| [Slides][] | [SpeakerDeck][] | [slideshare][]
+| [figshare][] | [GitHub][] | [bioRxiv][] | [arXiv][]
+| [Homebrew][] | [Linuxbrew][] | [Homebrew-science][]
+| [R][] | [ggplot2][] | [RMarkdown][] | [Pandoc][]
+| [Plain Text, Papers, Pandoc][]
+
+[\@sjackman][] | [github.com/sjackman][] | [sjackman.ca][]
+
+[sjackman.github.io/open-science][]
+
+[sjackman.github.io/open-science]: https://sjackman.github.io/open-science
+
 Shaun Jackman
 ------------------------------------------------------------
 
-[Genome Sciences Centre][], BC Cancer Agency
+| [Genome Sciences Centre][], BC Cancer Agency
+| Vancouver, Canada
+| [\@sjackman][]
+| [github.com/sjackman][]
+| [sjackman.ca][]
 
-Vancouver, Canada
-
-[\@sjackman][]
-
-[github.com/sjackman][]
-
-[sjackman.ca][]
+![Photo](sjackman.jpg)
