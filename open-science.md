@@ -1,5 +1,5 @@
 ---
-title: 'Open, reproducible science'
+title: 'Open, reproducible science using Make, RMarkdown and Pandoc'
 author: 'Shaun Jackman'
 date: '2014-08-18'
 ---
