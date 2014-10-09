@@ -12,7 +12,7 @@ install-deps:
 
 # Dependencies
 
-open-science.html: homebrew-bioinformatics.png
+open-science.html: images/homebrew-bioinformatics.png
 
 # Rules
 
@@ -32,5 +32,5 @@ homebrew-%.gv: homebrew.gv %.tsv
 		grep -Ff $*.tsv $< && \
 		echo '}') >$@
 
-%.png: %.gv
+images/%.png: %.gv
 	unflatten -fc9 -l9 $< |dot -Tpng >$@

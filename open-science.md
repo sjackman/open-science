@@ -13,7 +13,7 @@ Shaun Jackman [\@sjackman][]
 
 2014-10-09 at [VanBUG][], Vancouver, Canada
 
-[![Creative Commons Attribution License](cc-by.png)][cc-by]
+[![Creative Commons Attribution License](images/cc-by.png)][cc-by]
 
 [Fork me on GitHub!][]
 
@@ -31,7 +31,7 @@ Shaun Jackman
 | [github.com/sjackman][]
 | [sjackman.ca][]
 
-![Photo](sjackman.jpg)
+![](images/sjackman.jpg)
 
 [Genome Sciences Centre]: http://bcgsc.ca
 [github.com/sjackman]: https://github.com/sjackman
@@ -132,7 +132,7 @@ Managing software
 Homebrew navigates dependency hell
 ------------------------------------------------------------
 
-![Dependencies of bioinformatics tools in Homebrew](homebrew-bioinformatics.png)
+![Dependencies of bioinformatics tools in Homebrew](images/homebrew-bioinformatics.png)
 
 Publish data
 ------------------------------------------------------------
@@ -157,13 +157,13 @@ Version control
 + Data in a plain-text format, like TSV
 + GitHub [renders TSV][] pretty!
 
-![GitHub renders TSV pretty!](GitHub-tsv.png)
+![GitHub renders TSV pretty!](images/GitHub-tsv.png)
 
 ------------------------------------------------------------
 
 ### GitHub [renders TSV][] pretty!
 
-![GitHub renders TSV pretty!](GitHub-tsv.png)
+![GitHub renders TSV pretty!](images/GitHub-tsv.png)
 
 [renders TSV]: https://help.github.com/articles/rendering-csv-and-tsv-data
 
@@ -189,14 +189,14 @@ One Makefile
 Turns this
 ------------------------------------------------------------
 
-![[UniqTag Markdown][]](UniqTag-md.png)
+![[UniqTag Markdown][]](images/UniqTag-md.png)
 
 [UniqTag Markdown]: https://github.com/sjackman/uniqtag-paper/blob/master/UniqTag.md
 
 Into this
 ------------------------------------------------------------
 
-![[UniqTag PDF][]](UniqTag-pdf.png)
+![[UniqTag PDF][]](images/UniqTag-pdf.png)
 
 [UniqTag PDF]: http://biorxiv.org/content/early/2014/08/01/007583.full.pdf
 
@@ -207,7 +207,7 @@ Workflow
 
 [Plain Text, Papers, Pandoc][] by [Kieran Healy][]
 
-![I promise this is less insane than it appears](workflow-rmd-md.png)
+![I promise this is less insane than it appears](images/workflow-rmd-md.png)
 
 [Plain Text, Papers, Pandoc]: http://kieranhealy.org/blog/archives/2014/01/23/plain-text/
 [Kieran Healy]: http://kieranhealy.org/
@@ -322,4 +322,4 @@ Shaun Jackman
 | [github.com/sjackman][]
 | [sjackman.ca][]
 
-![Photo](sjackman.jpg)
+![](images/sjackman.jpg)
