@@ -1,7 +1,7 @@
 ---
 title: 'Open, reproducible science using Make, RMarkdown and Pandoc'
 author: 'Shaun Jackman'
-date: '2014-08-18'
+date: '2014-10-09'
 ---
 
 Open, reproducible science
@@ -11,13 +11,14 @@ Open, reproducible science
 
 Shaun Jackman [\@sjackman][]
 
-2014-08-18
+2014-10-09 at [VanBUG][], Vancouver, Canada
 
 [![Creative Commons Attribution License](cc-by.png)][cc-by]
 
 [Fork me on GitHub!][]
 
 [\@sjackman]: http://twitter.com/sjackman
+[VanBUG]: http://www.vanbug.org/
 [cc-by]: http://creativecommons.org/licenses/by/4.0/
 [Fork me on GitHub!]: https://github.com/sjackman/open-science
 
